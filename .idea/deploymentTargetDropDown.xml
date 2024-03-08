@@ -4,18 +4,18 @@
     <value>
       <entry key="MainActivity">
         <State>
-          <runningDeviceTargetSelectedWithDropDown>
+          <targetSelectedWithDropDown>
             <Target>
-              <type value="RUNNING_DEVICE_TARGET" />
+              <type value="QUICK_BOOT_TARGET" />
               <deviceKey>
                 <Key>
-                  <type value="SERIAL_NUMBER" />
-                  <value value="AQ7505H020NC0900734" />
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\chesa\.android\avd\Pixel_7a_Edited_API_30.avd" />
                 </Key>
               </deviceKey>
             </Target>
-          </runningDeviceTargetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-03-07T09:58:57.657322300Z" />
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-08T17:14:39.238567600Z" />
         </State>
       </entry>
       <entry key="app">
