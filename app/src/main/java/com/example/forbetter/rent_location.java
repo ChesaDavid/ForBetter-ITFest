@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.maps.MapView;
+
 public class rent_location extends AppCompatActivity {
     public Button maps;
     public void setMaps(){
@@ -18,12 +20,17 @@ public class rent_location extends AppCompatActivity {
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent action = new Intent(rent_location.this);
-                startActivity(action);
+//                Intent action = new Intent(rent_location.this);
+//                startActivity(action);
             }
         });
     }
-    public Map
+    public MapView mapView;
+
+    public void setMapView(MapView mapView) {
+        this.mapView = mapView;
+    }
+
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
