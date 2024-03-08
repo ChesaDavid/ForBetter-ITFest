@@ -35,13 +35,14 @@ public class singup extends AppCompatActivity {
     public Context context;
     public void setSingUp(){
         singUp = (Button) findViewById(R.id.singupButton);
-        singUp.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.S)
-            @Override
-            public void onClick(View v) {
-                setUsername(createContext(context,));
-            }
-        });
+        String nume = getUsername();
+        //singUp.setOnClickListener(new View.OnClickListener() {
+            //@RequiresApi(api = Build.VERSION_CODES.S)
+//            @Override
+//            public void onClick(View v) {
+//                setUsername(createContext(context,nume));
+//            }
+        //});
     }
     public static void setUsername(Context context, String username) {
 
