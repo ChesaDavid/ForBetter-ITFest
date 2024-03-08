@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.maps.MapView;
 
-public class rent_location extends AppCompatActivity implements onMapReadyCallback{
+public class rent_location extends AppCompatActivity {
 
 
     protected void onCreate(Bundle savedInstanceState){
