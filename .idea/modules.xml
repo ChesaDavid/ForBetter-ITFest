@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ForBetter-ITFest.iml" filepath="$PROJECT_DIR$/.idea/ForBetter-ITFest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ForBetter.iml" filepath="$PROJECT_DIR$/.idea/modules/ForBetter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ForBetter.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ForBetter.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ForBetter.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ForBetter.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ForBetter.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ForBetter.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ForBetter.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ForBetter.app.unitTest.iml" />
     </modules>
   </component>
 </project>

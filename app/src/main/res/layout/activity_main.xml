@@ -7,8 +7,8 @@
     android:id="@+id/MainPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#673AB7"
-    android:backgroundTint="#AEA3A3">
+    android:backgroundTint="#000000"
+    android:visibility="visible">
 
 
     <EditText
@@ -25,7 +25,6 @@
         android:textSize="60sp"
         android:textStyle="bold|italic"
         app:layout_anchorGravity="center"
-        app:layout_cnstraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -38,7 +37,6 @@
         android:layout_width="218dp"
         android:layout_height="88dp"
         android:text="Log In"
-        android:textSize="30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -51,7 +49,6 @@
         android:layout_width="226dp"
         android:layout_height="98dp"
         android:text="Sing Up"
-        android:textSize="30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
