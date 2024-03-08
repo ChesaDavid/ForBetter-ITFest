@@ -8,6 +8,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="rent_location">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
