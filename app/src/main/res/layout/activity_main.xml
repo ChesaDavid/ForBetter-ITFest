@@ -7,7 +7,7 @@
     android:id="@+id/MainPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#000000"
+    android:backgroundTint="#50623A"
     android:visibility="visible">
 
 
@@ -22,6 +22,7 @@
         android:inputType="text"
         android:text="ForBetter"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#8BC34A"
         android:textSize="60sp"
         android:textStyle="bold|italic"
         app:layout_anchorGravity="center"
@@ -36,6 +37,7 @@
         android:id="@+id/LogIn"
         android:layout_width="218dp"
         android:layout_height="88dp"
+        android:backgroundTint="#8BC34A"
         android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +50,7 @@
         android:id="@+id/SingUp"
         android:layout_width="226dp"
         android:layout_height="98dp"
+        android:backgroundTint="#8BC34A"
         android:text="Sing Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
