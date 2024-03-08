@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LogIn"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#B0D9B1">
 
     <ImageView
         android:id="@+id/logoImageView"
@@ -35,7 +36,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="392dp"
         android:layout_height="58dp"
-        android:background="#F1F3EF"
+        android:background="#B0D9B1"
         android:hint="Enter password ..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +50,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="47dp"
-            android:background="#FBFBFA"
+            android:background="#B0D9B1"
             android:ems="15"
             android:inputType="textPassword" />
 
