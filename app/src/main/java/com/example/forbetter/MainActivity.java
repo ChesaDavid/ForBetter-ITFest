@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    //crash happens pls fix
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
