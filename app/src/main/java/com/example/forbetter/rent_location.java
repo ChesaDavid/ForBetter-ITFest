@@ -18,7 +18,7 @@ public class rent_location extends AppCompatActivity {
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent action = new Intent(rent_location.this,);
+                Intent action = new Intent(rent_location.this);
                 startActivity(action);
             }
         });
