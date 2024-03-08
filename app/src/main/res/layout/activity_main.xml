@@ -7,7 +7,8 @@
     android:id="@+id/MainPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#50623A"
+    android:background="#B0D9B1"
+    android:backgroundTint="#B0D9B1"
     android:visibility="visible">
 
 
