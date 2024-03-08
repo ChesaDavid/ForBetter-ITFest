@@ -7,8 +7,8 @@
     android:id="@+id/MainPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#673AB7"
-    android:backgroundTint="#AEA3A3">
+    android:backgroundTint="#000000"
+    android:visibility="visible">
 
 
     <EditText
