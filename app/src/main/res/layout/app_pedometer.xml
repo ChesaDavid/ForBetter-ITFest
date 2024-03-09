@@ -7,7 +7,12 @@
     android:layout_height="match_parent"
     android:background="#B0D9B1" >
 
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="146dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,12 +32,8 @@
         android:background="#4CAF50"
         android:text="PEDOMETER:"
         android:textSize="100px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="58dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -42,32 +43,39 @@
         tools:layout_editor_absoluteY="83dp" />
 
     <ProgressBar
-<<<<<<< HEAD
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="244dp"
+        android:layout_height="196dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="202dp" />
 
     <ProgressBar
->>>>>>> 9a57f4608710bfdc81d3c42554164b6cbe7dd2ae
         android:id="@+id/progressBar3"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="315dp"
         android:layout_height="93dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="613dp" />
 
     <SeekBar
         android:id="@+id/seekBar"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="343dp"
-        android:layout_height="109dp"
+        android:layout_width="314dp"
+        android:layout_height="107dp"
         android:max="10"
         android:progress="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="597dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -77,11 +85,8 @@
         android:text="CO2 SAVED:"
 
         android:textSize="100px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="433dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -89,45 +94,9 @@
         android:layout_height="80dp"
         android:text="34736"
         android:textSize="160px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="533dp" />
 
-    <SeekBar
-        android:id="@+id/seekBar2"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="363dp"
-        android:layout_height="55dp"
-        android:max="10"
-        android:progress="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12000 steps"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
-
-</androidx.constraintlayout.widget.ConstraintLayout><![CDATA[=======
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="244dp"
-        android:layout_height="196dp"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="146dp" />]]
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
