@@ -40,8 +40,8 @@ public class mainscreen extends AppCompatActivity{
         pedometer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent action = new Intent(mainscreen.this,app_pedometer.class);
-                startActivity(action);
+                //Intent action = new Intent(mainscreen.this,app_pedometer.class);
+              //  startActivity(action);
             }
         });
     }
@@ -51,8 +51,8 @@ public class mainscreen extends AppCompatActivity{
         rentFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent action = new Intent(mainscreen.this,rent_location.class);
-                startActivity(action);
+              //  Intent action = new Intent(mainscreen.this,rent_location.class);
+             //   startActivity(action);
             }
         });
     }

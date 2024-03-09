@@ -1,4 +1,3 @@
-
 CREATE Email;
 CREATE Password;
 CREATE Username;
