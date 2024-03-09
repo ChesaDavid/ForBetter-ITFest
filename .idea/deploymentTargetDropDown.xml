@@ -2,11 +2,20 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="MainActivity">
-        <State />
-      </entry>
       <entry key="app">
         <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="AQ7505H020NC0900734" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-09T20:20:08.812763Z" />
           <targetsSelectedWithDialog>
             <Target>
               <type value="QUICK_BOOT_TARGET" />
@@ -19,9 +28,6 @@
             </Target>
           </targetsSelectedWithDialog>
         </State>
-      </entry>
-      <entry key="rent_location">
-        <State />
       </entry>
     </value>
   </component>
