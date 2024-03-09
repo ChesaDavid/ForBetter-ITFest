@@ -28,20 +28,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left,systemBars.top,systemBars.right, systemBars.bottom);
             return insets;
         }));
-      singUpButton = (Button) findViewById(R.id.SingUpButtonId);
-      logInButton = (Button) findViewById(R.id.LogInButtonId);
-      singUpButton.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-              OpenSingUp();
-          }
-      });
-      logInButton.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-              OpenLogIn();
-          }
-      });
+        singUpButton = (Button) findViewById(R.id.SingUpButtonId);
+        logInButton = (Button) findViewById(R.id.LogInButtonId);
+        singUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenSingUp();
+            }
+        });
+        logInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenLogIn();
+            }
+        });
 
     }
     public void OpenSingUp(){
@@ -49,12 +49,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(action);
     }
     public void OpenLogIn(){
-        Intent action = new Intent(this,login.class);
-        startActivity(action);
+        Intent action1 = new Intent(this,login.class);
+        startActivity(action1);
     }
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
-    }
+        super.onDestroy();}
+}
+class button extends MainActivity{
+
 }

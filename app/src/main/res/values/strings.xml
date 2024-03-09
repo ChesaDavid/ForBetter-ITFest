@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ForBetter</string>
+    <string name="pedometer">Pedometer</string>
+<!--    Log in-->
+    <string name="haveAccount">"Don't have an account "</string>
+    <string name="hereRegiseter">"Register here"</string>
+    <string name="hintLogPas">"Enter password..."</string>
+    <string name="EmailLogInhin">Emial</string>
+    <string name="loginBut">Log In</string>
+    <string name="userLogIn">Username</string>
 </resources>

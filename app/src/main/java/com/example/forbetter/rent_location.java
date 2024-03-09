@@ -28,7 +28,7 @@ public class rent_location extends AppCompatActivity  {
     }
     public MapView mapView;
     public void setMapView(){
-        mapView = findViewById(R.id.mapVi);
+//        mapView = findViewById(R.id.mapVi);
     }
 
 }
