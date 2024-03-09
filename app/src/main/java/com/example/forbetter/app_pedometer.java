@@ -8,8 +8,14 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class app_pedometer extends Activity implements SensorEventListener {
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
     private TextView textView;
     private SensorEventListener simpleStepDetector;
     private SensorManager sensorManager;
@@ -54,5 +60,9 @@ public class app_pedometer extends Activity implements SensorEventListener {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
 

@@ -1,6 +1,7 @@
 package com.example.forbetter;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +10,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class scooter_location extends AppCompatActivity {
-
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -20,5 +25,15 @@ public class scooter_location extends AppCompatActivity {
             v.setPadding(systemBars.left,systemBars.top,systemBars.right, systemBars.bottom);
             return insets;
         }));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+    @Override
+    public void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
 }

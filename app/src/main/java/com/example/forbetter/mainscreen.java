@@ -11,9 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -23,11 +25,17 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.regex.Pattern;
 
 public class mainscreen extends AppCompatActivity{
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
     public Button scooter;
     public void setScooter(){
         scooter = (Button) findViewById(R.id.scooterLoc);
         scooter.setOnClickListener(new View.OnClickListener() {
             @Override
+            @NonNull
             public void onClick(View v) {
                 Intent locations = new Intent(mainscreen.this,scooter_location.class);
                 startActivity(locations);
@@ -77,11 +85,20 @@ public class mainscreen extends AppCompatActivity{
             v.setPadding(systemBars.left,systemBars.top,systemBars.right,systemBars.bottom);
             return insets;
         }));
+
+    }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
         setScooter();
         setPedometer();
         setRentFrom();
         setNameProfile();
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -18,15 +20,27 @@ import java.util.regex.Pattern;
 //nevoie de un link cu database.sql
 public class login extends AppCompatActivity {
     @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    @NonNull
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.login);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.LogInButtonId),((v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         }));
+
+
+    }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
         password = findViewById(R.id.password);
         email = findViewById(R.id.email);
         TextInputEditText email;
@@ -41,8 +55,8 @@ public class login extends AppCompatActivity {
                 }
             }
         });
-
     }
+
     private static final Pattern PASSWORD_PATTERN=
             Pattern.compile("^"+
                     "(?=.*[@#$%^&+=]])"+

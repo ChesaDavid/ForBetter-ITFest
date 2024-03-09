@@ -17,7 +17,21 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class rent_location extends AppCompatActivity implements OnMapReadyCallback {
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.rent_locations);
 
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.mapFragment);
+        mapFragment.getMapAsync(this);
+
+    }
     private GoogleMap googleMap;
 
 
@@ -41,16 +55,10 @@ public class rent_location extends AppCompatActivity implements OnMapReadyCallba
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(markerLocation, 12.0f));
     }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.rent_locations);
-
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapFragment);
-        mapFragment.getMapAsync(this);
-
-
-
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
