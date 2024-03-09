@@ -20,18 +20,7 @@ public class rent_location extends AppCompatActivity implements OnMapReadyCallba
 
     private GoogleMap googleMap;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.rent_locations);
 
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapFragment);
-        mapFragment.getMapAsync(this);
-
-
-
-    }
     @SuppressLint("MissingInflatedId")
     public void crete(){
         Button btn = (Button) findViewById(R.id.buttonWhere);
@@ -51,5 +40,17 @@ public class rent_location extends AppCompatActivity implements OnMapReadyCallba
 
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(markerLocation, 12.0f));
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.rent_locations);
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.mapFragment);
+        mapFragment.getMapAsync(this);
+
+
+
     }
 }

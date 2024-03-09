@@ -72,13 +72,13 @@ public class singup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.singup);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.singUpsec),((v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left,systemBars.top,systemBars.right, systemBars.bottom);
-            return insets;
-        }));
+
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
 class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "mydatabase.db";

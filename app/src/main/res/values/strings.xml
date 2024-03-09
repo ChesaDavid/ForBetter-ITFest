@@ -9,4 +9,7 @@
     <string name="loginBut">Log In</string>
     <string name="userLogIn">Username</string>
     <string name="whereAmI">"Where Am I?"</string>
+    <string name="TitleButtonScater">SCOOTER</string>
+    <string name="ButtonPedometer">PEDOMETER</string>
+
 </resources>

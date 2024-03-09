@@ -14,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 public class MainActivity extends AppCompatActivity {
+    public Button singUpEnter;
+    public Button logInEnter;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +27,32 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
            }));
-        Button singUpBtn = findViewById(R.id.singupButton);
-//        if(singUpBtn.isEnabled()){
-//            singUpBtn.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent action = new Intent(MainActivity.this,singup.class);
-//                    startActivity(action);
-//                }
-//            });
-//        }
     }
 
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+        singUpEnter = findViewById(R.id.singupButton);
+        logInEnter = findViewById(R.id.LogInButtonId);
+        singUpEnter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,singup.class);
+                startActivity(intent);
+            }
+        });
+        logInEnter.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this,login.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
 
