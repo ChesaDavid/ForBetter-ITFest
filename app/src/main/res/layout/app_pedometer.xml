@@ -84,6 +84,18 @@
         app:layout_constraintTop_toTopOf="@+id/textView4"
         tools:layout_editor_absoluteX="26dp" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="511dp"
+        android:layout_height="24dp"
+        android:text="CO2 emissions (g/km) =     C (l/100km) × F (g/l)"
+        android:textSize="45px
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.524"
+        tools:layout_editor_absoluteX="26dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
