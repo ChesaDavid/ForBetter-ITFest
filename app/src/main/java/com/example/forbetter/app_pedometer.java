@@ -1,4 +1,4 @@
-package com.example.forbetter;
+/*package com.example.forbetter;
 
 import android.hardware.SensorManager;
 import android.os.Bundle;
@@ -28,4 +28,4 @@ public class app_pedometer extends AppCompatActivity {
             return insets;
         }));
     }
-}
+}*/

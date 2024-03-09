@@ -1,4 +1,4 @@
-package com.example.forbetter;
+/*package com.example.forbetter;
 
 import com.google.android.gms.maps.MapView;
 
@@ -31,4 +31,4 @@ public class rent_location extends AppCompatActivity  {
         mapView = findViewById(R.id.mapVi);
     }
 
-}
+}*/
