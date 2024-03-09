@@ -14,9 +14,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    public Button singUpButton;
-    public Button logInButton;
+    public Button signUpButton ;
+    public void setSignUpButton(){
+        signUpButton=findViewById(R.id.singupButton);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,singup.class);
+                startActivity(intent);
+            }
+        });
+    }
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,35 +36,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left,systemBars.top,systemBars.right, systemBars.bottom);
             return insets;
         }));
-        singUpButton = (Button) findViewById(R.id.SingUpButtonId);
-        logInButton = (Button) findViewById(R.id.LogInButtonId);
-        singUpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                OpenSingUp();
-            }
-        });
-        logInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                OpenLogIn();
-            }
-        });
+//        setSignUpButton();
 
     }
-    public void OpenSingUp(){
-        Intent action = new Intent(this,singup.class);
-        startActivity(action);
-    }
-    public void OpenLogIn(){
-        Intent action1 = new Intent(this,login.class);
-        startActivity(action1);
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();}
-}
-class button extends MainActivity{
-
 }
