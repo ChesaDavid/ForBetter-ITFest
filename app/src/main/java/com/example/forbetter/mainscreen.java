@@ -47,7 +47,7 @@ public class mainscreen extends AppCompatActivity{
     }
     public Button rentFrom;
     public void setRentFrom(){
-        rentFrom = (Button) findViewById(R.id.rentFromId);
+        //rentFrom = (Button) findViewById(R.id.rentFromId);
         rentFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +64,7 @@ public class mainscreen extends AppCompatActivity{
 
     public TextView nameProfile;
     public void setNameProfile(){
-        nameProfile = (TextView) findViewById(R.id.profileName);
+        //nameProfile = (TextView) findViewById(R.id.profileName);
         //Link with database
     }
     @Override
