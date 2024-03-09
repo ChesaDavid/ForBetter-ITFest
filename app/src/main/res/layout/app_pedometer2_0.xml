@@ -9,6 +9,4 @@
     android:gravity="center"
     android:background="#8FB67A"
     tools:context=".app_pedometer2_0"
-    >
-
-</LinearLayout>
+    />
