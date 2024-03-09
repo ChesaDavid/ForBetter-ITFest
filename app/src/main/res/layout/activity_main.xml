@@ -13,7 +13,7 @@
 
 
     <Button
-        android:id="@+id/LogIn"
+        android:id="@+id/LogInButtonId"
         android:layout_width="230dp"
         android:layout_height="94dp"
         android:backgroundTint="#8BC34A"
@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.576" />
 
     <Button
-        android:id="@+id/SingUp"
+        android:id="@+id/SingUpButtonId"
         android:layout_width="226dp"
         android:layout_height="98dp"
         android:backgroundTint="#8BC34A"

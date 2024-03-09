@@ -1,5 +1,6 @@
 package com.example.forbetter;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //crash happens pls fix
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,28 +27,32 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left,systemBars.top,systemBars.right, systemBars.bottom);
             return insets;
         }));
-          Button buttonLogIn;
-            buttonLogIn = (Button)findViewById(R.id.LogIn);
-            buttonLogIn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent action1 = new Intent(MainActivity.this, login.class);
-                    startActivity(action1);
-                }
-            });
-
-
-            Button buttonSingUp ;
-            buttonSingUp = (Button)findViewById(R.id.SingUp);
-            buttonSingUp.setOnClickListener(new View.OnClickListener(){
-                public void onClick(View v){
-                    Intent action2 = new Intent(MainActivity.this, singup.class);
-                    startActivity(action2);
-                }
-            });
+        Button singUpButton;
+        Button logInButton;
+      singUpButton = (Button) findViewById(R.id.SingUpButtonId);
+      logInButton = (Button) findViewById(R.id.LogInButtonId);
+      singUpButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              OpenSingUp();
+          }
+      });
+      logInButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              OpenLogIn();
+          }
+      });
 
     }
-
+    public void OpenSingUp(){
+        Intent action = new Intent(this,singup.class);
+        startActivity(action);
+    }
+    public void OpenLogIn(){
+        Intent action = new Intent(this,login.class);
+        startActivity(action);
+    }
 
 
 }
