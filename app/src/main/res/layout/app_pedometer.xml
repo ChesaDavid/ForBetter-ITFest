@@ -7,13 +7,6 @@
     android:layout_height="match_parent"
     android:background="#B0D9B1" >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="146dp" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="402dp"
@@ -32,50 +25,11 @@
         android:background="#4CAF50"
         android:text="PEDOMETER:"
         android:textSize="100px"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="58dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="279dp"
-        android:layout_height="25dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="83dp" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="244dp"
-        android:layout_height="196dp"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="146dp" />
-
-    <EditText
-        android:id="@+id/editTextNumberSigned"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberSigned"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="202dp" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="315dp"
-        android:layout_height="93dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="613dp" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="314dp"
-        android:layout_height="107dp"
-        android:max="10"
-        android:progress="3"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="597dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
     <TextView
         android:id="@+id/textView4"
@@ -85,17 +39,62 @@
         android:text="CO2 SAVED:"
 
         android:textSize="100px"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="433dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="406dp" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="213dp"
-        android:layout_height="80dp"
-        android:text="34736"
-        android:textSize="160px"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="533dp" />
+        android:id="@+id/textView3"
+        android:layout_width="282dp"
+        android:layout_height="113dp"
+        android:text="12000"
+        android:textSize="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="235dp"
+        android:layout_height="0dp"
+        android:text="STEPS"
+        android:textSize="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="358dp"
+        android:layout_height="63dp"
+        android:text="C = Fuel consumption of the car in liters per 100 kilometers (l/100km)  "
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:text="F = Conversion factor for CO2 emissions specific to fuel type (g/l)"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="511dp"
+        android:layout_height="24dp"
+        android:text="CO2 emissions (g/km) =     C (l/100km) × F (g/l)"
+        android:textSize="45px
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.524"
+        tools:layout_editor_absoluteX="26dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
