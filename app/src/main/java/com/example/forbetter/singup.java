@@ -80,7 +80,6 @@ public class singup extends AppCompatActivity {
     }
 
 }
-// DatabaseHelper.java
 class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "mydatabase.db";
     private static final int DATABASE_VERSION = 1;
@@ -110,6 +109,4 @@ class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USERS);
         onCreate(db);
     }
-
-    // Other methods for CRUD operations...
 }
