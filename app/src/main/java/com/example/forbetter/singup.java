@@ -77,4 +77,5 @@ public class singup extends AppCompatActivity {
             return insets;
         }));
     }
+
 }

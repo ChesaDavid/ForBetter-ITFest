@@ -20,7 +20,7 @@ import com.google.android.gms.maps.MapView;
 
 public class rent_location extends AppCompatActivity {
 
-
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);

@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class app_pedometer extends AppCompatActivity {
 
+    @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);

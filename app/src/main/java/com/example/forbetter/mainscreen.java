@@ -67,7 +67,7 @@ public class mainscreen extends AppCompatActivity{
         nameProfile = (TextView) findViewById(R.id.profileName);
         //Link with database
     }
-    @SuppressLint("MissingInflatedId")
+    @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
