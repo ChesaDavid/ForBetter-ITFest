@@ -1,4 +1,4 @@
-/*package com.example.forbetter;
+package com.example.forbetter;
 
 import com.google.android.gms.maps.MapView;
 
@@ -19,7 +19,7 @@ public class rent_location extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.rent_locations);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.rent_location1), ((v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.MapsLoc), ((v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -31,4 +31,4 @@ public class rent_location extends AppCompatActivity  {
 //        mapView = findViewById(R.id.mapVi);
     }
 
-}*/
+}
