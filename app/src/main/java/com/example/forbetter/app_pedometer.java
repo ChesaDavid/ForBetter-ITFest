@@ -1,15 +1,22 @@
 package com.example.forbetter;
 
+import android.hardware.SensorManager;
 import android.os.Bundle;
+<<<<<<< HEAD
+import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.activity.EdgeToEdge;
+=======
+import android.widget.TextView;
+>>>>>>> 270744f4d40a910ef574b4bec3a8bef42670f21c
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class app_pedometer extends AppCompatActivity {
 
+    public TextView steps;
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
