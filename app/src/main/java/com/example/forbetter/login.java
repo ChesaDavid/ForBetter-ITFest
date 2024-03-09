@@ -16,7 +16,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.regex.Pattern;
 
 //nevoie de un link cu database.sql
-public class login extends MainActivity {
+public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -29,7 +29,6 @@ public class login extends MainActivity {
         }));
         password = findViewById(R.id.password);
         email = findViewById(R.id.email);
-        TextInputEditText password;
         TextInputEditText email;
         Button loginbutton;
         loginbutton = (Button) findViewById(R.id.singupButton);
