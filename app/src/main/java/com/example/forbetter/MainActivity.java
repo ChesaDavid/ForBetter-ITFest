@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(action);
     }
 
-
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
