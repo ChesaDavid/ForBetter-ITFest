@@ -15,7 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
 
-    //crash happens pls fix
+    public Button singUpButton;
+    public Button logInButton;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left,systemBars.top,systemBars.right, systemBars.bottom);
             return insets;
         }));
-        Button singUpButton;
-        Button logInButton;
       singUpButton = (Button) findViewById(R.id.SingUpButtonId);
       logInButton = (Button) findViewById(R.id.LogInButtonId);
       singUpButton.setOnClickListener(new View.OnClickListener() {
