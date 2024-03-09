@@ -29,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <action android:name="android.intent.action.CALL_BUTTON"/>
             </intent-filter>
-
         </activity>
     </application>
 
