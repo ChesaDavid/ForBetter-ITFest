@@ -13,28 +13,7 @@ import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button buttonLogIn;
-    public void login() {
-        buttonLogIn = (Button)findViewById(R.id.LogIn);
-        buttonLogIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent action1 = new Intent(MainActivity.this, login.class);
-                startActivity(action1);
-            }
-        });
-    }
 
-    public Button buttonSingUp ;
-    public void singup() {
-        buttonSingUp = (Button)findViewById(R.id.SingUp);
-        buttonSingUp.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent action2 = new Intent(MainActivity.this, singup.class);
-                startActivity(action2);
-            }
-        });
-    }
     //crash happens pls fix
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +28,26 @@ public class MainActivity extends AppCompatActivity {
         MobileAds.initialize(this,initializationStatus -> {
 
         });
-        login();
-        singup();
+         Button buttonLogIn;
+            buttonLogIn = (Button)findViewById(R.id.LogIn);
+            buttonLogIn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent action1 = new Intent(MainActivity.this, login.class);
+                    startActivity(action1);
+                }
+            });
+
+
+            Button buttonSingUp ;
+            buttonSingUp = (Button)findViewById(R.id.SingUp);
+            buttonSingUp.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    Intent action2 = new Intent(MainActivity.this, singup.class);
+                    startActivity(action2);
+                }
+            });
+
     }
 
 

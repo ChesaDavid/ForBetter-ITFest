@@ -1,5 +1,4 @@
 plugins {
-    alias(libs.plugins().androidApplication)
 }
 
 android {
@@ -41,6 +40,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation('com.google.android.gms:play-services-ads:latest_version')
+    implementation('com.google.android.gms:play-services-appset:16.0.0')
     
 }
