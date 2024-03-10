@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+<<<<<<< HEAD
+      <entry key="app">
+=======
       <entry key="MainActivity">
         <State>
           <targetSelectedWithDropDown>
@@ -46,6 +49,7 @@
         </State>
       </entry>
       <entry key="rent_location">
+>>>>>>> caa2cbebeb5884683ce2e45aee844d0d4aa26de7
         <State />
       </entry>
     </value>
