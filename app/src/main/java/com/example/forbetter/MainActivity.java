@@ -15,6 +15,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.forbetter.ui.login.LoginActivity;
+
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -42,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onUserInteraction() {
         super.onUserInteraction();
-        singUpEnter = findViewById(R.id.singupButton);
+        singUpEnter = findViewById(R.id.SingUpButtonId);
         logInEnter = findViewById(R.id.LogInButtonId);
         singUpEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             @NonNull
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,singup.class);
+                Intent intent = new Intent(MainActivity.this,singuppage.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             @NonNull
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this,login.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
