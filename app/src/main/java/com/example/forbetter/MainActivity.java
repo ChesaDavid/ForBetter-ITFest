@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.ButtonBarLayout;
 import androidx.core.graphics.Insets;
@@ -14,10 +17,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 public class MainActivity extends AppCompatActivity {
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
+
     public Button singUpEnter;
     public Button logInEnter;
     @SuppressLint("MissingInflatedId")
     @Override
+    @NonNull
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -36,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         logInEnter = findViewById(R.id.LogInButtonId);
         singUpEnter.setOnClickListener(new View.OnClickListener() {
             @Override
+            @NonNull
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,singup.class);
                 startActivity(intent);
@@ -43,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
         logInEnter.setOnClickListener(new View.OnClickListener(){
             @Override
+            @NonNull
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this,login.class);
                 startActivity(intent);
@@ -53,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+    @Override
+    public void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
 }
 
