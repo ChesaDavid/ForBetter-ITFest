@@ -10,7 +10,7 @@ public class LoginRepository {
 
     private static volatile LoginRepository instance;
 
-    private final LoginDataSource dataSource;
+    private LoginDataSource dataSource;
 
     // If user credentials will be cached in local storage, it is recommended it be encrypted
     // @see https://developer.android.com/training/articles/keystore
@@ -22,7 +22,7 @@ public class LoginRepository {
     }
 
     public static LoginRepository getInstance(LoginDataSource dataSource) {
-        if (instance == null) {
+        if(instance == null){
             instance = new LoginRepository(dataSource);
         }
         return instance;

@@ -5,8 +5,8 @@ package com.example.forbetter.data.model;
  */
 public class LoggedInUser {
 
-    private final String userId;
-    private final String displayName;
+    private String userId;
+    private String displayName;
 
     public LoggedInUser(String userId, String displayName) {
         this.userId = userId;

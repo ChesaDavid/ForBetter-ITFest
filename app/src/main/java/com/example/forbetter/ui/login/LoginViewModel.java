@@ -3,7 +3,6 @@ package com.example.forbetter.ui.login;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
 import android.util.Patterns;
 
 import com.example.forbetter.data.LoginRepository;
@@ -13,9 +12,9 @@ import com.example.forbetter.R;
 
 public class LoginViewModel extends ViewModel {
 
-    private final MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
-    private final MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
-    private final LoginRepository loginRepository;
+    private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
+    private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
+    private LoginRepository loginRepository;
 
     LoginViewModel(LoginRepository loginRepository) {
         this.loginRepository = loginRepository;

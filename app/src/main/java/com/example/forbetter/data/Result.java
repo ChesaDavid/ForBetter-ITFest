@@ -5,22 +5,11 @@ package com.example.forbetter.data;
  */
 public class Result<T> {
     // hide the private constructor to limit subclass types (Success, Error)
-    private Result() {
-    }
-
-    @Override
-    public String toString() {
-        if (this instanceof Result.Success success) {
-            return "Success[data=" + success.getData().toString() + "]";
-        } else if (this instanceof Result.Error error) {
-            return "Error[exception=" + error.getError().toString() + "]";
-        }
-        return "";
-    }
+    private Result() {}
 
     // Success sub-class
     public final static class Success<T> extends Result {
-        private final T data;
+        private T data;
 
         public Success(T data) {
             this.data = data;
@@ -33,7 +22,7 @@ public class Result<T> {
 
     // Error sub-class
     public final static class Error extends Result {
-        private final Exception error;
+        private Exception error;
 
         public Error(Exception error) {
             this.error = error;
@@ -42,5 +31,17 @@ public class Result<T> {
         public Exception getError() {
             return this.error;
         }
+    }
+
+    @Override
+    public String toString() {
+        if (this instanceof Result.Success) {
+            Result.Success success = (Result.Success) this;
+            return "Success[data=" + success.getData().toString() + "]";
+        } else if (this instanceof Result.Error) {
+            Result.Error error = (Result.Error) this;
+            return "Error[exception=" + error.getError().toString() + "]";
+        }
+        return "";
     }
 }
