@@ -10,11 +10,9 @@ public class Result<T> {
 
     @Override
     public String toString() {
-        if (this instanceof Result.Success) {
-            Result.Success success = (Result.Success) this;
+        if (this instanceof Result.Success success) {
             return "Success[data=" + success.getData().toString() + "]";
-        } else if (this instanceof Result.Error) {
-            Result.Error error = (Result.Error) this;
+        } else if (this instanceof Result.Error error) {
             return "Error[exception=" + error.getError().toString() + "]";
         }
         return "";
@@ -22,7 +20,7 @@ public class Result<T> {
 
     // Success sub-class
     public final static class Success<T> extends Result {
-        private T data;
+        private final T data;
 
         public Success(T data) {
             this.data = data;
@@ -35,7 +33,7 @@ public class Result<T> {
 
     // Error sub-class
     public final static class Error extends Result {
-        private Exception error;
+        private final Exception error;
 
         public Error(Exception error) {
             this.error = error;
